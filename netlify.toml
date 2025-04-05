@@ -1,5 +1,4 @@
-
-curl https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=AIzaSyBrrREtlM6XT4Iy0AsGKU4_xOyS1bAocBQ \
+curl https://xujiaqi123.netlify.app/v1/models/gemini-pro:generateContent?key=AIzaSyBrrREtlM6XT4Iy0AsGKU4_xOyS1bAocBQ \
    -H 'Content-Type: application/json' \
    -X POST \
    -d '{ "contents":[
@@ -7,7 +6,7 @@ curl https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateCont
    ]
 }'
 
-curl https://https://generativelanguage.googleapis.com/v1/models/gemini-pro:streamGenerateContent?key=AIzaSyBrrREtlM6XT4Iy0AsGKU4_xOyS1bAocBQ&alt=sse \
+curl https://xujiaqi123.netlify.app/v1/models/gemini-pro:streamGenerateContent?key=AIzaSyBrrREtlM6XT4Iy0AsGKU4_xOyS1bAocBQ&alt=sse \
    -H 'Content-Type: application/json' \
    --no-buffer \
    -d '{ "contents":[
