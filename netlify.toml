@@ -1,11 +1,18 @@
-[[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Headers = "*"
-    Access-Control-Allow-Methods = "*"
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/proxy"
-  status = 200
-  force = true
+
+curl https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key={YOUR_KEY} \
+   -H 'Content-Type: application/json' \
+   -X POST \
+   -d '{ "contents":[
+   { "parts":[{"text": "Hi"}]}
+   ]
+}'
+
+curl https://https://generativelanguage.googleapis.com/v1/models/gemini-pro:streamGenerateContent?key={YOUR_KEY}&alt=sse \
+   -H 'Content-Type: application/json' \
+   --no-buffer \
+   -d '{ "contents":[
+         {"role": "user",
+            "parts":[{"text": "Hi"}]
+         }
+         ]
+      }' > response.json
